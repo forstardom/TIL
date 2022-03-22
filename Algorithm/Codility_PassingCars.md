@@ -4,7 +4,7 @@
 
 ---
 
-[Task]
+### **[Task]**
 
 A non-empty array A consisting of N integers is given. The consecutive elements of array A represent consecutive cars on a road.
 
@@ -50,7 +50,30 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ---
 
-[Source]
+### **[Solution]**
+
+0 = 오른쪽 이동  
+1 = 왼쪽 이동
+
+**주어진 예제:**  
+A[0] = 0  
+A[1] = 1  
+A[2] = 0  
+A[3] = 1  
+A[4] = 1
+
+**원하는 정답:** 5
+
+**풀이:**  
+먼저 1인 경우를 구해야 한다.  
+이 문제는 한쌍(0,1)을 만들려면 시작 숫자가 0일 경우 다음 번에 1을 만날 수 있는 경우의 수를 구해야 하는데, 이 과정에서 1의 값을 알아야 0이 최초 시작되는 위치에서부터 1을 만날 수 있는 경우와 그 다음 0이 1을 만날 수 있는 경우를 구할 수 있기 때문이다.
+
+0 다음에 1일 만났을 경우 oneCount--;를 해주면 다음 0이 1을 만날 경우의 값을 구할 수 있다.
+그렇게 되면 A[0]일 경우 예제와 같이 1을 만날 경우는 3번이고, A[2]가 1을 만날 경우는 2번이기 때문에 5라는 결과값을 구할 수 있다.
+
+---
+
+### **[Source]**
 
 ```Java
 class Solution {
@@ -71,12 +94,12 @@ class Solution {
             } else {
                 oneCount--;
             }
-            //배열, passingCar, oneCount
-            //A[0], 3, 3
-            //A[1], 3, 2
-            //A[2], 5, 2
-            //A[3], 5, 1
-            //A[4], 5, 0
+            //A     passingCars, oneCount
+            //A[0]      3           3
+            //A[1]      3           2
+            //A[2]      5           2
+            //A[3]      5           1
+            //A[4]      5           0
 
             if(passingCar > 1000000000){
             passingCar = -1;
