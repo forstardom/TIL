@@ -1,7 +1,5 @@
 ## REST API - Set HTTP Headers
 
-<br>
-
 ### 1 Content-Location
 
 요청의 응답 헤더에 새로 생성된 리소스를 식별할 수 있는 속성이다. (HATEOAS로 Content-Location 대체 가능)
