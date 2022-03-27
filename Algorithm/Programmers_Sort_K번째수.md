@@ -39,7 +39,6 @@ start: 자르는 시작 위치
 end: 자르는 끝 위치  
 select: 선택 위치(k번째 수)
 
-**풀이:**  
 Arrays.copyOfRange(arr, n1, n2)  
 -> 대상 배열의 시작, 끝 위치에 해당하는 요소만을 새로운 배열로 복사한다.  
 <br>
