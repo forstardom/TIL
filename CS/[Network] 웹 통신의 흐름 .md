@@ -22,12 +22,9 @@ PC는 가장 먼저 브라우저 내에 존재하는 Browser DNS Cache라는 공
 만약 OS DNS Cache에서도 찾지 못하면 Router DNS Server라는 곳을 조회한다. Router에서 DNS 기록을 캐싱하고 있기 때문에 접속하려는 도메인의 IP 주소를 얻어올 수 있는 것 이다.
 
 **1-4. DNS Server**  
-만약 Router DNS Server에도 도메인에 대한 IP 주소가 없다면 Root DNS Server부터 조회하며 아래 과정을 통해 IP주소를 알아내야 한다.  
-<br>
+만약 Router DNS Server에도 도메인에 대한 IP 주소가 없다면 Root DNS Server부터 조회하며 아래 과정을 통해 IP주소를 알아내야 한다.
 
 ---
-
-<br>
 
 ### **2. DNS Server에 해당 도메인에 매핑되는 IP 주소를 요청**
 
@@ -42,12 +39,9 @@ PC는 가장 먼저 브라우저 내에 존재하는 Browser DNS Cache라는 공
 
 (3) PC는 다시 .com Name Server에 www.google.com을 질의하는데, 이때 .com Name Server도 "나도 걔 IP 주소 같은 건 모르겠고, google.com Name Server IP 주소는 아니까 그거 줄게" 라고 google.com Name Server IP 주소를 넘겨준다.
 
-(4) 최종적으로 PC는 google.com Name Server에 www.google.com을 질의하는데, 드디어 사용자가 원하는 구글의 IP 주소를 받을 수 있다.  
-<br>
+(4) 최종적으로 PC는 google.com Name Server에 www.google.com을 질의하는데, 드디어 사용자가 원하는 구글의 IP 주소를 받을 수 있다.
 
 ---
-
-<br>
 
 ### **3. DNS Server로부터 받은 IP주소로 웹 서버에 접속**
 
