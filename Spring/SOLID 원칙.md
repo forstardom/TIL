@@ -37,7 +37,7 @@
 - 프로그래머는 "추상화에 의존해야지, 구체화에 의존하면 안된다." 의존성 주입은 이 원칙을 따르는 방법 중 하나다.
 - 클라이언트 코드가 구현 클래스를 바라보지 말고 인터페이스만 바라봐야함
 - MemberService가 MemberRepository 인터페이스만 바라보고 MemberMemoryRepository나 JdbcRepository에 대해서는 몰라야함(역할 의존)
-- DIP 위반 예시: MemberService는 인터페이스 뿐만 아니라 구현 클래스도 동시에 의존
+- DIP 위반 예시: MemberService는 인터페이스 뿐만 아니라 구현체도 동시에 의존
 
 ```Java
 public class MemberService {
