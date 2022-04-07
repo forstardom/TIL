@@ -9,4 +9,4 @@
 
 1. 생성자에 `@Autowired`를 지정하면, 스프링 컨테이너가 자동으로 해당 스프링 빈을 찾아서 주입한다.
 2. 이때 기본 조회 전략은 타입이 같은 빈을 찾아서 주입한다.
-   - getBean(MemberRepository.class) 와 동일하다.
+   - `getBean(MemberRepository.class)` 와 동일하다.
