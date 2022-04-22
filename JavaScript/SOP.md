@@ -23,6 +23,8 @@ URI 를 결정하는 알고리즘은 RFC 6454 에 명시되어 있으며 출처(
 XMLHttpRequest cannot load ‘https://store.company.com'. No ‘Access-Control-Allow-Origin’ header is present on the requested resource. Origin ‘http://store.company.com' is therefore not allowed access.
 ```
 
+---
+
 ## **동일 출처 원칙을 사용하는 이유**
 
 가장 큰 이유는 브라우저 측면에서의 웹 어플리케이션 보안 강화
@@ -30,6 +32,8 @@ XMLHttpRequest cannot load ‘https://store.company.com'. No ‘Access-Control-A
 1. XSS 와 같은 스크립트 삽입 공격을 통해서 출처가 다른 웹 어플리케이션에 접근을 방지한다.
 2. 웹 어플리케이션은 인증된 사용자 세션정보를 HTTP Cookie에 담아서 광범위하게 사용하곤 하는데, 출처(Origin)가 다른 페이지에서 스크립트를 이용해 해당 쿠키정보를 추출할 수 있기 때문이다.
 3. 데이터의 기밀성 또는 일관성을 유지하기 위해서 클라이언트 측에서 관계 없는 사이트에서 제공된 컨탠츠를 분리해야 한다.
+
+---
 
 ## **동일 출처 원칙 회피방법**
 

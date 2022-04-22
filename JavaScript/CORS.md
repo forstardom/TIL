@@ -22,7 +22,7 @@ CORS는 Cross-Orgin Resource Sharing(상호 출처 자원 공유)의 약자로, 
 
   따라서 다른 출처의 리소스를 불러오기 위해서는, 그 출처에서 교차 출처 리소스 공유에 대한 헤더(CORS)를 응답시 반환 해주어야 한다.
 
-  <br>
+---
 
 ## **CORS 동작 방식**
 
@@ -32,7 +32,7 @@ CORS는 Cross-Orgin Resource Sharing(상호 출처 자원 공유)의 약자로, 
     서버는 요청에 대한 응답을 하는데, 응답 헤더 (response header)에 Access-Control-Allow-Origin이라는 값에 '이 리소스를 접근하는 것이 허용된 출처'를 내려준다.
     이후 응답을 받은 브라우저는 자신이 보냈던 요청의 Origin과 서버가 보내준 응답의 Access-Control-Allow-Origin을 비교해 본 후 이 응답이 유효한 응답인지 아닌지를 결정한다
 
-<br>
+---
 
 ## **CORS 동작 시나리오**
 
