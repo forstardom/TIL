@@ -1,6 +1,6 @@
-## 다양한 의존관계 주입 방법
+# 다양한 의존관계 주입 방법
 
-**1. 생성자 주입**
+## **1. 생성자 주입**
 
 - 생성자를 통해서 의존관계를 주입 받는 방법이다.
 - 특징
@@ -32,9 +32,9 @@ public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discou
 }
 ```
 
-<br>
+---
 
-**2. 수정자 주입(setter)**
+## **2. 수정자 주입(setter)**
 
 - setter로 필드의 값을 변경하는 수정자 메소드를 통해서 의존관계를 주입하는 방식이다.
 - 특징
@@ -75,9 +75,9 @@ class Data {
 }
 ```
 
-<br>
+---
 
-**3. 필드 주입**
+## **3. 필드 주입**
 
 - 필드에 바로 주입하는 방식이다.
 - 특징
@@ -92,9 +92,9 @@ class Data {
 @Autowired private DiscountPolicy discountPolicy;
 ```
 
-<br>
+---
 
-**4. 일반 메소드 주입**
+## **4. 일반 메소드 주입**
 
 - 일반 메소드를 통해서 주입 받을 수 있다.
 - 특징

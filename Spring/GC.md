@@ -1,4 +1,4 @@
-# **Garbage Collection**
+# Garbage Collection
 
 사용자가 동적으로 할당한 메모리를 할당 해제해주는 것
 
@@ -28,7 +28,7 @@ Heap 영역은 young, old 영역이 있고, 그 안에 에덴(1ea)과 서바이�
 - 작동은 Minor GC가 일어날 때마다 Old 영역을 조금씩 GC 해서 Full GC가 발생하는 횟수나 시간을 줄이는 방식이다.
 - Incremental GC는 많은 자원을 소모하고 Minor GC를 자주 일으켜서, 그리고 Incremental GC를 사용한다고 Full GC가 없어지거나 그 횟수가 획기적으로 줄어드는 것이 아니다. 오히려 느려지는 경우가 많으므로 반드시 테스트를 거치고 사용해야한다.
 
-<br>
+---
 
 ## **JVM GC 튜닝**
 

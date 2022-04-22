@@ -1,4 +1,4 @@
-# **Gradle과 Maven의 개념 및 차이**
+# Gradle과 Maven의 개념 및 차이
 
 ## **Gradle 이란?**
 
@@ -80,7 +80,7 @@ plugins {
 
 - settings.gradle: 여러가지로 사용할 수 있지만 대부분 멀티 모듈을 사용할때 설정한다.
 
-<br>
+---
 
 ## **Maven 이란?**
 

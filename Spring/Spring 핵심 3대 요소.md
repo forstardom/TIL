@@ -1,4 +1,4 @@
-## Spring 핵심 3대 요소
+# Spring 핵심 3대 요소
 
 - 제어의 역전(IoC, Inversion of Control)
 - 관점 지향 프로그래밍(AOP, Aspect Oriented Programming)
