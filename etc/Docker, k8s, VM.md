@@ -1,4 +1,6 @@
-**Docker란?**
+# Docker, Kubernetes, VM의 개념과 차이
+
+## Docker란?
 
 - 컨테이너 기반의 가상화 플랫폼
 
@@ -14,13 +16,13 @@
 **Docker 배포 방법**
 
 - 배포할 파일 빌드 (maven install)
-- Docker 빌드 (docker build --tag mes-mvp-common:1.0.)
-- Docker 이미지 생성 (docker save mes-mvp-common:1.0 -o mes-mvp-common_1.0.img)
+- Docker 빌드
+- Docker 이미지 생성
 - Shell script로 컨테이너 실행
 
 **Docker vs VM**
 
-- VM은 컴퓨터 리소스를 고정적으로 분할하여 사용하고, Docker는 필요한 만큼만 컨테이너에 할당하여 사용하기 때문에 자원을 효율적으로 사용할 수 있습니다.
+- VM은 컴퓨터 리소스를 고정적으로 분할하여 사용하고, Docker는 필요한 만큼만 컨테이너에 할당하여 사용하기 때문에 자원을 효율적으로 사용할 수 있다.
 - VM은 환경을 확실히 분리해주긴 하지만 컴퓨터 리소스를 고정적으로 분할해서 사용하기 때문에 A가 40% B가 50%의 리소스를 사용하게 된다면 추후 추가하는 C는 리소스를 10%밖에 사용하지 못함
 
 **Docker vs k8s**
