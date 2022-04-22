@@ -1,5 +1,7 @@
 # Garbage Collection
 
+## **Garbage Collection이란?**
+
 사용자가 동적으로 할당한 메모리를 할당 해제해주는 것
 
 ## **동작 방식**
