@@ -19,7 +19,7 @@
 ## **영속성 컨텍스트를 플러시하는 방법**
 
 - em.flush() - 직접 호출
-- Transaction commit = 플러시 자동 호출
+- Transaction commit - 플러시 자동 호출
 - JPQL 쿼리 실행 - 플러시 자동 호출
 
 ## **플러시 모드 옵션**
